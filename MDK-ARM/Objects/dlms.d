@@ -1,0 +1,16 @@
+.\objects\dlms.o: ..\User\DLMS_COSEM\dlms.c
+.\objects\dlms.o: D:\Local\Keil_v5\ARM\ARMCOMPILER5062\Bin\..\include\stdio.h
+.\objects\dlms.o: D:\Local\Keil_v5\ARM\ARMCOMPILER5062\Bin\..\include\string.h
+.\objects\dlms.o: ..\User\inc\common_types.h
+.\objects\dlms.o: D:\Local\Keil_v5\ARM\ARMCOMPILER5062\Bin\..\include\stdint.h
+.\objects\dlms.o: ..\User\DLMS_COSEM\inc\dlms.h
+.\objects\dlms.o: ..\User\DLMS_COSEM\inc\obis.h
+.\objects\dlms.o: ..\User\DLMS_COSEM\inc\cosem.h
+.\objects\dlms.o: D:\Local\Keil_v5\ARM\ARMCOMPILER5062\Bin\..\include\stdbool.h
+.\objects\dlms.o: ..\User\DLMS_COSEM\inc\hdlc.h
+.\objects\dlms.o: ..\User\DLMS_COSEM\inc\cosem.h
+.\objects\dlms.o: ..\User\inc\globals.h
+.\objects\dlms.o: ..\User\inc\HAL.h
+.\objects\dlms.o: ..\User\inc\MD5.h
+.\objects\dlms.o: ..\User\DLMS_COSEM\inc\DLMS_COSEM_Handlers_Exchanges.h
+.\objects\dlms.o: ..\User\DLMS_COSEM\inc\DLMS_COSEM_Handlers_Methods.h

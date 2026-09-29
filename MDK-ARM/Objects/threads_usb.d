@@ -1,0 +1,17 @@
+.\objects\threads_usb.o: ..\User\Threads\threads_USB.c
+.\objects\threads_usb.o: ..\User\inc\USB_Driver.h
+.\objects\threads_usb.o: D:\Local\Keil_v5\ARM\ARMCOMPILER5062\Bin\..\include\stdbool.h
+.\objects\threads_usb.o: ..\User\inc\common_types.h
+.\objects\threads_usb.o: D:\Local\Keil_v5\ARM\ARMCOMPILER5062\Bin\..\include\stdint.h
+.\objects\threads_usb.o: ..\User\inc\pt-1.4\pt.h
+.\objects\threads_usb.o: ..\User\inc\pt-1.4\lc.h
+.\objects\threads_usb.o: ..\User\inc\pt-1.4\lc-switch.h
+.\objects\threads_usb.o: ..\User\inc\log.h
+.\objects\threads_usb.o: ..\User\inc\fifo.h
+.\objects\threads_usb.o: D:\Local\Keil_v5\ARM\ARMCOMPILER5062\Bin\..\include\stdio.h
+.\objects\threads_usb.o: ..\User\inc\messages.h
+.\objects\threads_usb.o: D:\Local\Keil_v5\ARM\ARMCOMPILER5062\Bin\..\include\string.h
+.\objects\threads_usb.o: ..\User\inc\utils.h
+.\objects\threads_usb.o: ..\User\inc\globals.h
+.\objects\threads_usb.o: ..\User\inc\HAL.h
+.\objects\threads_usb.o: ..\User\inc\MD5.h

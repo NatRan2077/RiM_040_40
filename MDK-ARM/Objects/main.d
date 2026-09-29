@@ -1,0 +1,17 @@
+.\objects\main.o: ..\src\main.c
+.\objects\main.o: ..\User\inc\utils.h
+.\objects\main.o: D:\Local\Keil_v5\ARM\ARMCOMPILER5062\Bin\..\include\stdio.h
+.\objects\main.o: ..\User\inc\common_types.h
+.\objects\main.o: D:\Local\Keil_v5\ARM\ARMCOMPILER5062\Bin\..\include\stdint.h
+.\objects\main.o: ..\User\inc\globals.h
+.\objects\main.o: D:\Local\Keil_v5\ARM\ARMCOMPILER5062\Bin\..\include\stdbool.h
+.\objects\main.o: ..\User\inc\HAL.h
+.\objects\main.o: ..\User\inc\MD5.h
+.\objects\main.o: ..\User\inc\log.h
+.\objects\main.o: ..\User\inc\fifo.h
+.\objects\main.o: ..\User\inc\HAL.h
+.\objects\main.o: ..\User\inc\threads.h
+.\objects\main.o: ..\User\inc\pt-1.4\pt.h
+.\objects\main.o: ..\User\inc\pt-1.4\lc.h
+.\objects\main.o: ..\User\inc\pt-1.4\lc-switch.h
+.\objects\main.o: ..\User\inc\memory.h
