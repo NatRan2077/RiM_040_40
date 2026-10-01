@@ -5,8 +5,8 @@
 #include "globals.h"
 #include <string.h>
 //----------------------------------------------------------------------------//
-const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {	//Массив с OBIS-кодами, точностью отображения, флагом отображения кило
-//				Name						OBIS-Code			Accurecy	fKilo	группа
+const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {	//?????? ? OBIS-??????, ????????? ???????????, ?????? ??????????? ????
+//				Name						OBIS-Code			Accurecy	fKilo	??????
 	/*	DLMS_ENERGY_I_IV	*/			1, 0,  1,  8, 0, 255,	ACC_2,		true,	1,		// Energy KWh - I+IV
 	/*	DLMS_ENERGY_II_III	*/			1, 0,  2,  8, 0, 255,	ACC_2,		true,	1,		// Energy KWh  - II+III							
 	/*	DLMS_ENERGY_I_II	*/			1, 0,  3,  8, 0, 255,	ACC_2,		true,	1,		// Energy KVArh - I+II
@@ -21,32 +21,32 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {	//Массив с O
 	/*	DLMS_ACTIVE_ENERGY_T7	*/		1, 0,  1,  8, 7, 255,	ACC_2,		true,	1,		// 7-tariff of Active Energy (KWh)
 	/*	DLMS_ACTIVE_ENERGY_T8	*/		1, 0,  1,  8, 8, 255,	ACC_2,		true,	1,		// 8-tariff of Active Energy (KWh)
 
-	/*	DLMS_ENERGY_II_III_T1	*/		1, 0,  2,  8, 1, 255,	ACC_2,		true,	1,		// Активная энергия экспорт 1 тариф KWh  - II+III
-	/*	DLMS_ENERGY_II_III_T2	*/		1, 0,  2,  8, 2, 255,	ACC_2,		true,	1,		// Активная энергия экспорт 2 тариф KWh  - II+III
-	/*	DLMS_ENERGY_II_III_T3	*/		1, 0,  2,  8, 3, 255,	ACC_2,		true,	1,		// Активная энергия экспорт 3 тариф KWh  - II+III
-	/*	DLMS_ENERGY_II_III_T4	*/		1, 0,  2,  8, 4, 255,	ACC_2,		true,	1,		// Активная энергия экспорт 4 тариф KWh  - II+III
-	/*	DLMS_ENERGY_II_III_T5	*/		1, 0,  2,  8, 5, 255,	ACC_2,		true,	1,		// Активная энергия экспорт 5 тариф KWh  - II+III
-	/*	DLMS_ENERGY_II_III_T6	*/		1, 0,  2,  8, 6, 255,	ACC_2,		true,	1,		// Активная энергия экспорт 6 тариф KWh  - II+III
-	/*	DLMS_ENERGY_II_III_T7	*/		1, 0,  2,  8, 7, 255,	ACC_2,		true,	1,		// Активная энергия экспорт 7 тариф KWh  - II+III
-	/*	DLMS_ENERGY_II_III_T8	*/		1, 0,  2,  8, 8, 255,	ACC_2,		true,	1,		// Активная энергия экспорт 8 тариф KWh  - II+III
+	/*	DLMS_ENERGY_II_III_T1	*/		1, 0,  2,  8, 1, 255,	ACC_2,		true,	1,		// ???????? ??????? ??????? 1 ????? KWh  - II+III
+	/*	DLMS_ENERGY_II_III_T2	*/		1, 0,  2,  8, 2, 255,	ACC_2,		true,	1,		// ???????? ??????? ??????? 2 ????? KWh  - II+III
+	/*	DLMS_ENERGY_II_III_T3	*/		1, 0,  2,  8, 3, 255,	ACC_2,		true,	1,		// ???????? ??????? ??????? 3 ????? KWh  - II+III
+	/*	DLMS_ENERGY_II_III_T4	*/		1, 0,  2,  8, 4, 255,	ACC_2,		true,	1,		// ???????? ??????? ??????? 4 ????? KWh  - II+III
+	/*	DLMS_ENERGY_II_III_T5	*/		1, 0,  2,  8, 5, 255,	ACC_2,		true,	1,		// ???????? ??????? ??????? 5 ????? KWh  - II+III
+	/*	DLMS_ENERGY_II_III_T6	*/		1, 0,  2,  8, 6, 255,	ACC_2,		true,	1,		// ???????? ??????? ??????? 6 ????? KWh  - II+III
+	/*	DLMS_ENERGY_II_III_T7	*/		1, 0,  2,  8, 7, 255,	ACC_2,		true,	1,		// ???????? ??????? ??????? 7 ????? KWh  - II+III
+	/*	DLMS_ENERGY_II_III_T8	*/		1, 0,  2,  8, 8, 255,	ACC_2,		true,	1,		// ???????? ??????? ??????? 8 ????? KWh  - II+III
 
-	/*	DLMS_ENERGY_I_II_T1	*/			1, 0,  3,  8, 1, 255,	ACC_2,		true,	1,		// Реактивная энергия импорт 1 тариф KVArh - I+II
-	/*	DLMS_ENERGY_I_II_T2	*/			1, 0,  3,  8, 2, 255,	ACC_2,		true,	1,		// Реактивная энергия импорт 2 тариф KVArh - I+II
-	/*	DLMS_ENERGY_I_II_T3	*/			1, 0,  3,  8, 3, 255,	ACC_2,		true,	1,		// Реактивная энергия импорт 3 тариф KVArh - I+II
-	/*	DLMS_ENERGY_I_II_T4	*/			1, 0,  3,  8, 4, 255,	ACC_2,		true,	1,		// Реактивная энергия импорт 4 тариф KVArh - I+II
-	/*	DLMS_ENERGY_I_II_T5	*/			1, 0,  3,  8, 5, 255,	ACC_2,		true,	1,		// Реактивная энергия импорт 5 тариф KVArh - I+II
-	/*	DLMS_ENERGY_I_II_T6	*/			1, 0,  3,  8, 6, 255,	ACC_2,		true,	1,		// Реактивная энергия импорт 6 тариф KVArh - I+II
-	/*	DLMS_ENERGY_I_II_T7	*/			1, 0,  3,  8, 7, 255,	ACC_2,		true,	1,		// Реактивная энергия импорт 7 тариф KVArh - I+II
-	/*	DLMS_ENERGY_I_II_T8	*/			1, 0,  3,  8, 8, 255,	ACC_2,		true,	1,		// Реактивная энергия импорт 8 тариф KVArh - I+II
+	/*	DLMS_ENERGY_I_II_T1	*/			1, 0,  3,  8, 1, 255,	ACC_2,		true,	1,		// ?????????? ??????? ?????? 1 ????? KVArh - I+II
+	/*	DLMS_ENERGY_I_II_T2	*/			1, 0,  3,  8, 2, 255,	ACC_2,		true,	1,		// ?????????? ??????? ?????? 2 ????? KVArh - I+II
+	/*	DLMS_ENERGY_I_II_T3	*/			1, 0,  3,  8, 3, 255,	ACC_2,		true,	1,		// ?????????? ??????? ?????? 3 ????? KVArh - I+II
+	/*	DLMS_ENERGY_I_II_T4	*/			1, 0,  3,  8, 4, 255,	ACC_2,		true,	1,		// ?????????? ??????? ?????? 4 ????? KVArh - I+II
+	/*	DLMS_ENERGY_I_II_T5	*/			1, 0,  3,  8, 5, 255,	ACC_2,		true,	1,		// ?????????? ??????? ?????? 5 ????? KVArh - I+II
+	/*	DLMS_ENERGY_I_II_T6	*/			1, 0,  3,  8, 6, 255,	ACC_2,		true,	1,		// ?????????? ??????? ?????? 6 ????? KVArh - I+II
+	/*	DLMS_ENERGY_I_II_T7	*/			1, 0,  3,  8, 7, 255,	ACC_2,		true,	1,		// ?????????? ??????? ?????? 7 ????? KVArh - I+II
+	/*	DLMS_ENERGY_I_II_T8	*/			1, 0,  3,  8, 8, 255,	ACC_2,		true,	1,		// ?????????? ??????? ?????? 8 ????? KVArh - I+II
 
-	/*	DLMS_ENERGY_III_IV_T1	*/		1, 0,  4,  8, 1, 255,	ACC_2,		true,	1,		// Реактивная энергия экспорт 1 тариф KVArh - III+IV
-	/*	DLMS_ENERGY_III_IV_T2	*/		1, 0,  4,  8, 2, 255,	ACC_2,		true,	1,		// Реактивная энергия экспорт 2 тариф KVArh - III+IV
-	/*	DLMS_ENERGY_III_IV_T3	*/		1, 0,  4,  8, 3, 255,	ACC_2,		true,	1,		// Реактивная энергия экспорт 3 тариф KVArh - III+IV
-	/*	DLMS_ENERGY_III_IV_T4	*/		1, 0,  4,  8, 4, 255,	ACC_2,		true,	1,		// Реактивная энергия экспорт 4 тариф KVArh - III+IV
-	/*	DLMS_ENERGY_III_IV_T5	*/		1, 0,  4,  8, 5, 255,	ACC_2,		true,	1,		// Реактивная энергия экспорт 5 тариф KVArh - III+IV
-	/*	DLMS_ENERGY_III_IV_T6	*/		1, 0,  4,  8, 6, 255,	ACC_2,		true,	1,		// Реактивная энергия экспорт 6 тариф KVArh - III+IV
-	/*	DLMS_ENERGY_III_IV_T7	*/		1, 0,  4,  8, 7, 255,	ACC_2,		true,	1,		// Реактивная энергия экспорт 7 тариф KVArh - III+IV
-	/*	DLMS_ENERGY_III_IV_T8	*/		1, 0,  4,  8, 8, 255,	ACC_2,		true,	1,		// Реактивная энергия экспорт 8 тариф KVArh - III+IV
+	/*	DLMS_ENERGY_III_IV_T1	*/		1, 0,  4,  8, 1, 255,	ACC_2,		true,	1,		// ?????????? ??????? ??????? 1 ????? KVArh - III+IV
+	/*	DLMS_ENERGY_III_IV_T2	*/		1, 0,  4,  8, 2, 255,	ACC_2,		true,	1,		// ?????????? ??????? ??????? 2 ????? KVArh - III+IV
+	/*	DLMS_ENERGY_III_IV_T3	*/		1, 0,  4,  8, 3, 255,	ACC_2,		true,	1,		// ?????????? ??????? ??????? 3 ????? KVArh - III+IV
+	/*	DLMS_ENERGY_III_IV_T4	*/		1, 0,  4,  8, 4, 255,	ACC_2,		true,	1,		// ?????????? ??????? ??????? 4 ????? KVArh - III+IV
+	/*	DLMS_ENERGY_III_IV_T5	*/		1, 0,  4,  8, 5, 255,	ACC_2,		true,	1,		// ?????????? ??????? ??????? 5 ????? KVArh - III+IV
+	/*	DLMS_ENERGY_III_IV_T6	*/		1, 0,  4,  8, 6, 255,	ACC_2,		true,	1,		// ?????????? ??????? ??????? 6 ????? KVArh - III+IV
+	/*	DLMS_ENERGY_III_IV_T7	*/		1, 0,  4,  8, 7, 255,	ACC_2,		true,	1,		// ?????????? ??????? ??????? 7 ????? KVArh - III+IV
+	/*	DLMS_ENERGY_III_IV_T8	*/		1, 0,  4,  8, 8, 255,	ACC_2,		true,	1,		// ?????????? ??????? ??????? 8 ????? KVArh - III+IV
 
 	/*	DLMS_TIME	*/					0, 0,  0,  9, 1, 255,	ACC_2,		false,	1,	// Time
 	/*	DLMS_DATE	*/					0, 0,  0,  9, 2, 255,	ACC_2,		false,	1,	// Date
@@ -71,22 +71,22 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {	//Массив с O
 	/*	DLMS_L1_VOLTAGE	*/				1, 0, 32,  7, 0, 255,	ACC_2,		false,	2,
 	/*	DLMS_L2_VOLTAGE	*/				1, 0, 52,  7, 0, 255,	ACC_2,		false,	2,
 	/*	DLMS_L3_VOLTAGE	*/				1, 0, 72,  7, 0, 255,	ACC_2,		false,	2,
-	/*	DLMS_L1_L2_VOLTAGE_OLD */		1, 0, 12,  7, 1, 255,	ACC_2,		false,	2,	// Линейное напряжение L1-L2
-	/*	DLMS_L2_L3_VOLTAGE_OLD */		1, 0, 12,  7, 2, 255,	ACC_2,		false,	2,	// Линейное напряжение L2-L3
-	/*	DLMS_L1_L3_VOLTAGE_OLD */		1, 0, 12,  7, 3, 255,	ACC_2,		false,	2,	// Линейное напряжение L1-L3
-	/*	DLMS_L1_L2_VOLTAGE */			1, 0, 124, 7, 0, 255,	ACC_2,		false,	2,	// Линейное напряжение L1-L2
-	/*	DLMS_L2_L3_VOLTAGE */			1, 0, 125, 7, 0, 255,	ACC_2,		false,	2,	// Линейное напряжение L2-L3
-	/*	DLMS_L1_L3_VOLTAGE */			1, 0, 126, 7, 0, 255,	ACC_2,		false,	2,	// Линейное напряжение L1-L3
+	/*	DLMS_L1_L2_VOLTAGE_OLD */		1, 0, 12,  7, 1, 255,	ACC_2,		false,	2,	// ???????? ?????????? L1-L2
+	/*	DLMS_L2_L3_VOLTAGE_OLD */		1, 0, 12,  7, 2, 255,	ACC_2,		false,	2,	// ???????? ?????????? L2-L3
+	/*	DLMS_L1_L3_VOLTAGE_OLD */		1, 0, 12,  7, 3, 255,	ACC_2,		false,	2,	// ???????? ?????????? L1-L3
+	/*	DLMS_L1_L2_VOLTAGE */			1, 0, 124, 7, 0, 255,	ACC_2,		false,	2,	// ???????? ?????????? L1-L2
+	/*	DLMS_L2_L3_VOLTAGE */			1, 0, 125, 7, 0, 255,	ACC_2,		false,	2,	// ???????? ?????????? L2-L3
+	/*	DLMS_L1_L3_VOLTAGE */			1, 0, 126, 7, 0, 255,	ACC_2,		false,	2,	// ???????? ?????????? L1-L3
 	/*	DLMS_CURRENT	*/				1, 0, 11,  7, 0, 255,	ACC_3,		false,	2,
 	/*	DLMS_L1_CURRENT	*/				1, 0, 31,  7, 0, 255,	ACC_3,		false,	2,
 	/*	DLMS_L2_CURRENT	*/				1, 0, 51,  7, 0, 255,	ACC_3,		false,	2,
 	/*	DLMS_L3_CURRENT	*/				1, 0, 71,  7, 0, 255,	ACC_3,		false,	2,
 	/*	DLMS_NEUTRAL_CURRENT	*/		1, 0, 91,  7, 0, 255,	ACC_3,		false,	2,
 	/*	DLMS_SUPPLY_FREQUENCY	*/		1, 0, 14,  7, 0, 255,	ACC_3,		false,	2,
-	/*	DLMS_L1_COS					*/	1, 0, 33,  7, 0, 255,	ACC_3,		false,	2,	// Cos(фаза A)
-	/*	DLMS_L2_COS					*/	1, 0, 53,  7, 0, 255,	ACC_3,		false,	2,	// Cos(фаза B)
-	/*	DLMS_L3_COS					*/	1, 0, 73,  7, 0, 255,	ACC_3,		false,	2,	// Cos(фаза C)
-	/*	DLMS_COS					*/	1, 0, 13,  7, 0, 255,	ACC_3,		false,	2,	// Cos(общий)
+	/*	DLMS_L1_COS					*/	1, 0, 33,  7, 0, 255,	ACC_3,		false,	2,	// Cos(???? A)
+	/*	DLMS_L2_COS					*/	1, 0, 53,  7, 0, 255,	ACC_3,		false,	2,	// Cos(???? B)
+	/*	DLMS_L3_COS					*/	1, 0, 73,  7, 0, 255,	ACC_3,		false,	2,	// Cos(???? C)
+	/*	DLMS_COS					*/	1, 0, 13,  7, 0, 255,	ACC_3,		false,	2,	// Cos(?????)
 
 	
 	
@@ -170,19 +170,19 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {	//Массив с O
 	/*	DLMS_RDCH_TIME	*/				0, 0,  0,  9, 1, 101,	ACC_2,		false,	3,	// Time RDCH
 	/*	DLMS_RDCH_DATE	*/				0, 0,  0,  9, 2, 101,	ACC_2,		false,	3,	// Date RDCH
 
-	/*	DLMS_SERIAL_NUMBER_METER	*/	0, 0, 96,  1, 0, 255,	ACC_2,		false,	4,	// Серийный номер счетчика
-	/*	DLMS_TYPE_METER	*/				0, 0, 96,  1, 1, 255,	ACC_2,		false,	4,	// Тип счетчика
-	/*	DLMS_FW_METER	*/				0, 0, 96,  1, 2, 255,	ACC_2,		false,	4,	// Версия ПО счетчика
-	/*	DLMS_OPERATING_TIME	*/			0, 0, 96,  8, 0, 255,	ACC_2,		false,	4,	// Время наработки счетчика
+	/*	DLMS_SERIAL_NUMBER_METER	*/	0, 0, 96,  1, 0, 255,	ACC_2,		false,	4,	// ???????? ????? ????????
+	/*	DLMS_TYPE_METER	*/				0, 0, 96,  1, 1, 255,	ACC_2,		false,	4,	// ??? ????????
+	/*	DLMS_FW_METER	*/				0, 0, 96,  1, 2, 255,	ACC_2,		false,	4,	// ?????? ?? ????????
+	/*	DLMS_OPERATING_TIME	*/			0, 0, 96,  8, 0, 255,	ACC_2,		false,	4,	// ????? ????????? ????????
 	/*	DLMS_BATTERY_VOLTAGE	*/		0, 0, 96,  6, 3, 255,	ACC_3,		false,	4,	// Battary voltage
-	/*	DLMS_TEMPERATURE	*/			0, 0, 96,  9, 0, 255,	ACC_4,		false,	4,	// Температура
+	/*	DLMS_TEMPERATURE	*/			0, 0, 96,  9, 0, 255,	ACC_4,		false,	4,	// ???????????
 	
-	/*	DLMS_SERIAL_NUMBER_DISPLAY	*/	0, 0, 96,  1,150,255,	ACC_2,		false,	4,	// Серийный номер пульта
-	/*	DLMS_TYPE_DISPLAY	*/			0, 0, 96,  1,151,255,	ACC_2,		false,	4,	// Тип пульта
-	/*	DLMS_FW_DISPLAY	*/				0, 0, 96,  1,152,255,	ACC_2,		false,	4,	// Версия ПО пульта
+	/*	DLMS_SERIAL_NUMBER_DISPLAY	*/	0, 0, 96,  1,150,255,	ACC_2,		false,	4,	// ???????? ????? ??????
+	/*	DLMS_TYPE_DISPLAY	*/			0, 0, 96,  1,151,255,	ACC_2,		false,	4,	// ??? ??????
+	/*	DLMS_FW_DISPLAY	*/				0, 0, 96,  1,152,255,	ACC_2,		false,	4,	// ?????? ?? ??????
 	
-	/*	DLMS_LCD_DIAG	*/				255,255,255,255,255,255,ACC_2,		false,	4,	//Диагностика
-	/*	DLMS_NO_DATA	*/				255,255,255,255,255,255,ACC_2,		false,	4,	//Нет данных
+	/*	DLMS_LCD_DIAG	*/				255,255,255,255,255,255,ACC_2,		false,	4,	//???????????
+	/*	DLMS_NO_DATA	*/				255,255,255,255,255,255,ACC_2,		false,	4,	//??? ??????
 																					};	//END OBIS_codes
 //----------------------------------------------------------------------------//
 void ShowOBIS(objDLMS_t OBIS){	//
@@ -1192,10 +1192,15 @@ void ShowData(obj_t element){
 	double tmpVal, tmp;
 
 	switch(element.type){
-		case TAG_FLOAT32:	tmpVal = *(double*)&element.value;		break;
+		case TAG_FLOAT32:{	// float32 bits are stored in the low 32 bits of value (AKROS)
+			u32 raw = (u32)element.value;
+			float f;
+			memcpy(&f, &raw, sizeof(f));
+			tmpVal = (double)f;
+		}break;
 		case TAG_INT32:		tmpVal = (double)((s32)element.value);	break;
 		case TAG_UINT32:{
-			if(0 == memcmp(element.pConst->OBIS, dlms.obj[DLMS_OPERATING_TIME].pConst->OBIS, 6)){	//Если время
+			if(0 == memcmp(element.pConst->OBIS, dlms.obj[DLMS_OPERATING_TIME].pConst->OBIS, 6)){	//???? ?????
 				lcd.show_long(element.value/60, false, false, 0);
 				return;
 			}
@@ -1206,7 +1211,7 @@ void ShowData(obj_t element){
 		case TAG_UINT64:	tmpVal = (double)((u64)element.value);	break;
 		case TAG_INT64:		tmpVal = (double)((s64)element.value);	break;
 		case TAG_OCTET_STRING:{
-			if((0 == memcmp(element.pConst->OBIS, dlms.obj[DLMS_TIME].pConst->OBIS, 6)) || (0 == memcmp(element.pConst->OBIS, dlms.obj[DLMS_RDCH_TIME].pConst->OBIS, 6))){	//Если время
+			if((0 == memcmp(element.pConst->OBIS, dlms.obj[DLMS_TIME].pConst->OBIS, 6)) || (0 == memcmp(element.pConst->OBIS, dlms.obj[DLMS_RDCH_TIME].pConst->OBIS, 6))){	//???? ?????
 				lcd.clear_data();
 				RTC_TimeTypeDef RTC_Time;
 				RTC_Time.Hours = BYTE_3(element.value);
@@ -1215,7 +1220,7 @@ void ShowData(obj_t element){
 				lcd.show_time(&RTC_Time);
 				return;
 			}
-			else if((0 == memcmp(element.pConst->OBIS, dlms.obj[DLMS_DATE].pConst->OBIS, 6)) || (0 == memcmp(element.pConst->OBIS, dlms.obj[DLMS_RDCH_DATE].pConst->OBIS, 6))){	//Если дата
+			else if((0 == memcmp(element.pConst->OBIS, dlms.obj[DLMS_DATE].pConst->OBIS, 6)) || (0 == memcmp(element.pConst->OBIS, dlms.obj[DLMS_RDCH_DATE].pConst->OBIS, 6))){	//???? ????
 				RTC_TimeTypeDef RTC_Time;
 				RTC_Time.Date = BYTE_0(element.value);
 				RTC_Time.Month = BYTE_1(element.value);
@@ -1249,7 +1254,7 @@ void ShowData(obj_t element){
 		case TAG_NULLDATA:{
 			if(0 == memcmp(element.pConst->OBIS, dlms.obj[DLMS_SERIAL_NUMBER_DISPLAY].pConst->OBIS, 6)){
 				lcd.show_long(SystemInfo.serialNumber, true, false, 0);
-				lcd.showText("НOМ ДД");
+				lcd.showText("?O? ??");
 				lcd.text(SHOW, 1, CP3);
 				return;
 			}
@@ -1259,15 +1264,15 @@ void ShowData(obj_t element){
 				lcd.show_val_pos(0, 11);
 				lcd.show_val_pos(4, 12);
 				lcd.show_val_pos(0, 13);
-				lcd.showText("ТИП ДД");
+				lcd.showText("??? ??");
 				lcd.text(SHOW, 1, PP4);
 				return;
 			}
 			else if(0 == memcmp(element.pConst->OBIS, dlms.obj[DLMS_FW_DISPLAY].pConst->OBIS, 6)){
 				u32 tmp = (FW_VERSION_MAJOR * 1000000) + (FW_VERSION_MINOR * 10000) + (FW_VERSION_PATCH * 100) + FW_VERSION_BUILD;
-				lcd.show_long(tmp, false, false, 2);	//номер прошивки
+				lcd.show_long(tmp, false, false, 2);	//????? ????????
 				lcd.text(SHOW, 3, PP2, PP4, PP6);
-				lcd.showText("ПО ДД");
+				lcd.showText("?? ??");
 				return;
 			}
 			else return;
@@ -1344,4 +1349,3 @@ void ShowData(obj_t element){
 	}
 }
 //----------------------------------------------------------------------------//
-
