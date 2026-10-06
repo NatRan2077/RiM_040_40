@@ -6,6 +6,9 @@
 .\objects\dlmslistobj.o: D:\Local\Keil_v5\ARM\ARMCOMPILER5062\Bin\..\include\stdbool.h
 .\objects\dlmslistobj.o: ..\User\DLMS_COSEM\inc\hdlc.h
 .\objects\dlmslistobj.o: ..\User\DLMS_COSEM\inc\cosem.h
+.\objects\dlmslistobj.o: ..\User\inc\globals.h
+.\objects\dlmslistobj.o: ..\User\inc\HAL.h
+.\objects\dlmslistobj.o: ..\User\inc\MD5.h
 .\objects\dlmslistobj.o: ..\User\inc\lcd.h
 .\objects\dlmslistobj.o: ..\firmware\CMSIS\device\cmt453x.h
 .\objects\dlmslistobj.o: ..\firmware\CMSIS\core\core_cm0.h
@@ -36,7 +39,4 @@
 .\objects\dlmslistobj.o: ..\User\inc\log.h
 .\objects\dlmslistobj.o: ..\User\inc\fifo.h
 .\objects\dlmslistobj.o: D:\Local\Keil_v5\ARM\ARMCOMPILER5062\Bin\..\include\stdio.h
-.\objects\dlmslistobj.o: ..\User\inc\globals.h
-.\objects\dlmslistobj.o: ..\User\inc\HAL.h
-.\objects\dlmslistobj.o: ..\User\inc\MD5.h
 .\objects\dlmslistobj.o: D:\Local\Keil_v5\ARM\ARMCOMPILER5062\Bin\..\include\string.h
