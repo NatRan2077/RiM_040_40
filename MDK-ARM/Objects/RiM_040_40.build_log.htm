@@ -27,6 +27,16 @@ Project File Date:  09/29/2026
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Local\Keil_v5\ARM\ARMCOMPILER5062\Bin'
 Build target 'RiM_040_40'
+compiling dlmsListObj.c...
+..\User\inc\dlmsListObj.h(314): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\dlmsListObj.c(2777): warning:  #177-D: variable "tmp"  was declared but never referenced
+    double tmpVal, tmp;
+..\User\dlmsListObj.c(2981): warning:  #1-D: last line of file ends without a newline
+  //----------------------------------------------------------------------------//
+..\User\dlmsListObj.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=192032 RO-data=16872 RW-data=1784 ZI-data=27032  
 After Build - User command #1: fromelf --bin --output=.\bin\RiM_040_40.bin .\Objects\RiM_040_40.axf
 After Build - User command #2: C:\Users\Nikita\Desktop\Ri\DD\RiM_040_40\MDK-ARM\PostBuild.exe
 C:\Users\Nikita\Desktop\Ri\DD\RiM_040_40\MDK-ARM\..\Bootloader\bin\RiM_040_40_Bootloader_v1.bin
@@ -34,7 +44,7 @@ C:\Users\Nikita\Desktop\Ri\DD\RiM_040_40\MDK-ARM\..\User\inc\HAL.h
 C:\Users\Nikita\Desktop\Ri\DD\RiM_040_40\MDK-ARM\bin\RiM_040_40.bin
 Версия: RiM_040.40_v1.1.7-b+7.bin
 Ошибка: Could not find a part of the path 'C:\Users\Nikita\Desktop\Ri\DD\RiM_040_40\bin\RiM_040.40_v1.1.7-b+7.bin'.
-".\Objects\RiM_040_40.axf" - 0 Error(s), 0 Warning(s).
+".\Objects\RiM_040_40.axf" - 0 Error(s), 3 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -47,7 +57,7 @@ Package Vendor: HOPERF
   D:/Local/Arm/Packs/cmt/CMT453X_DFP/0.0.1/firmware/CMSIS/device
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

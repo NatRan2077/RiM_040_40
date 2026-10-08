@@ -1786,6 +1786,7 @@ void ShowOBIS(objDLMS_t OBIS) { //
     lcd.text(SHOW, 2, OP2, OP3);
     break;
   case DLMS_NOMINAL_FREQUENCY:
+    lcd.showText("\xCD\xCE\xCC"); // NOM
     dlms.fHz = true; // 1.0.0.6.2
     lcd.show_val_pos(1, 17);
     lcd.show_val_pos(0, 18);
