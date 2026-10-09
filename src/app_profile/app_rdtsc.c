@@ -161,13 +161,15 @@ void app_rdtsc_add_rdts(void) {
   db_cfg = (struct rdtsc_db_cfg *)req->param;
 
   // Attribute table. In case the handle offset needs to be saved
-  db_cfg->p_char = &rdtsc_char[0];
+  // AKROS service ABF0 is searched first: some AKROS meters have BOTH ABF0 and
+  // FFE0, RiM meters have only FFE0 -> found on the second (fallback) search
+  db_cfg->p_char = &rdtsc_akros_char[0];
   db_cfg->p_desc = &rdtsc_desc[0];
-  db_cfg->p_uuid128 = rdtsc_uuid128;
-  db_cfg->p_char_main = &rdtsc_char[0];
-  db_cfg->p_uuid128_main = rdtsc_uuid128;
-  db_cfg->p_char_alt = &rdtsc_akros_char[0];
-  db_cfg->p_uuid128_alt = rdtsc_akros_uuid128;
+  db_cfg->p_uuid128 = rdtsc_akros_uuid128;
+  db_cfg->p_char_main = &rdtsc_akros_char[0];
+  db_cfg->p_uuid128_main = rdtsc_akros_uuid128;
+  db_cfg->p_char_alt = &rdtsc_char[0];
+  db_cfg->p_uuid128_alt = rdtsc_uuid128;
 
   // Send the message
   ke_msg_send(req);

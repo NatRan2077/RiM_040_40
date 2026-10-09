@@ -9,9 +9,9 @@ extern bool dlmsClockAkros; // AKROS: date/time from clock 0.0.1.0.0.255
                             // (thread_dataRequest.c)
 //----------------------------------------------------------------------------//
 const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
-    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ OBIS-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    // ˜˜˜˜˜˜ ˜ OBIS-˜˜˜˜˜˜, ˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜˜˜˜˜, ˜˜˜˜˜˜ ˜˜˜˜˜˜˜˜˜˜˜ ˜˜˜˜
     //				Name
-    //OBIS-Code			Accurecy	fKilo	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    // OBIS-Code			Accurecy	fKilo	˜˜˜˜˜˜
     /*	DLMS_ENERGY_I_IV	*/ 1,
     0,
     1,
@@ -130,7 +130,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1 ï¿½ï¿½ï¿½ï¿½ï¿½ KWh  - II+III
+    1, // ˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ 1 ˜˜˜˜˜ KWh  - II+III
     /*	DLMS_ENERGY_II_III_T2	*/ 1,
     0,
     2,
@@ -139,7 +139,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2 ï¿½ï¿½ï¿½ï¿½ï¿½ KWh  - II+III
+    1, // ˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ 2 ˜˜˜˜˜ KWh  - II+III
     /*	DLMS_ENERGY_II_III_T3	*/ 1,
     0,
     2,
@@ -148,7 +148,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 3 ï¿½ï¿½ï¿½ï¿½ï¿½ KWh  - II+III
+    1, // ˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ 3 ˜˜˜˜˜ KWh  - II+III
     /*	DLMS_ENERGY_II_III_T4	*/ 1,
     0,
     2,
@@ -157,7 +157,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 4 ï¿½ï¿½ï¿½ï¿½ï¿½ KWh  - II+III
+    1, // ˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ 4 ˜˜˜˜˜ KWh  - II+III
     /*	DLMS_ENERGY_II_III_T5	*/ 1,
     0,
     2,
@@ -166,7 +166,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 5 ï¿½ï¿½ï¿½ï¿½ï¿½ KWh  - II+III
+    1, // ˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ 5 ˜˜˜˜˜ KWh  - II+III
     /*	DLMS_ENERGY_II_III_T6	*/ 1,
     0,
     2,
@@ -175,7 +175,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 6 ï¿½ï¿½ï¿½ï¿½ï¿½ KWh  - II+III
+    1, // ˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ 6 ˜˜˜˜˜ KWh  - II+III
     /*	DLMS_ENERGY_II_III_T7	*/ 1,
     0,
     2,
@@ -184,7 +184,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 7 ï¿½ï¿½ï¿½ï¿½ï¿½ KWh  - II+III
+    1, // ˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ 7 ˜˜˜˜˜ KWh  - II+III
     /*	DLMS_ENERGY_II_III_T8	*/ 1,
     0,
     2,
@@ -193,7 +193,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 8 ï¿½ï¿½ï¿½ï¿½ï¿½ KWh  - II+III
+    1, // ˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ 8 ˜˜˜˜˜ KWh  - II+III
 
     /*	DLMS_ENERGY_I_II_T1	*/ 1,
     0,
@@ -203,7 +203,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1 ï¿½ï¿½ï¿½ï¿½ï¿½ KVArh - I+II
+    1, // ˜˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜ 1 ˜˜˜˜˜ KVArh - I+II
     /*	DLMS_ENERGY_I_II_T2	*/ 1,
     0,
     3,
@@ -212,7 +212,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2 ï¿½ï¿½ï¿½ï¿½ï¿½ KVArh - I+II
+    1, // ˜˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜ 2 ˜˜˜˜˜ KVArh - I+II
     /*	DLMS_ENERGY_I_II_T3	*/ 1,
     0,
     3,
@@ -221,7 +221,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 3 ï¿½ï¿½ï¿½ï¿½ï¿½ KVArh - I+II
+    1, // ˜˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜ 3 ˜˜˜˜˜ KVArh - I+II
     /*	DLMS_ENERGY_I_II_T4	*/ 1,
     0,
     3,
@@ -230,7 +230,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 4 ï¿½ï¿½ï¿½ï¿½ï¿½ KVArh - I+II
+    1, // ˜˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜ 4 ˜˜˜˜˜ KVArh - I+II
     /*	DLMS_ENERGY_I_II_T5	*/ 1,
     0,
     3,
@@ -239,7 +239,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 5 ï¿½ï¿½ï¿½ï¿½ï¿½ KVArh - I+II
+    1, // ˜˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜ 5 ˜˜˜˜˜ KVArh - I+II
     /*	DLMS_ENERGY_I_II_T6	*/ 1,
     0,
     3,
@@ -248,7 +248,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 6 ï¿½ï¿½ï¿½ï¿½ï¿½ KVArh - I+II
+    1, // ˜˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜ 6 ˜˜˜˜˜ KVArh - I+II
     /*	DLMS_ENERGY_I_II_T7	*/ 1,
     0,
     3,
@@ -257,7 +257,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 7 ï¿½ï¿½ï¿½ï¿½ï¿½ KVArh - I+II
+    1, // ˜˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜ 7 ˜˜˜˜˜ KVArh - I+II
     /*	DLMS_ENERGY_I_II_T8	*/ 1,
     0,
     3,
@@ -266,7 +266,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 8 ï¿½ï¿½ï¿½ï¿½ï¿½ KVArh - I+II
+    1, // ˜˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜ 8 ˜˜˜˜˜ KVArh - I+II
 
     /*	DLMS_ENERGY_III_IV_T1	*/ 1,
     0,
@@ -276,7 +276,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1 ï¿½ï¿½ï¿½ï¿½ï¿½ KVArh - III+IV
+    1, // ˜˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ 1 ˜˜˜˜˜ KVArh - III+IV
     /*	DLMS_ENERGY_III_IV_T2	*/ 1,
     0,
     4,
@@ -285,7 +285,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2 ï¿½ï¿½ï¿½ï¿½ï¿½ KVArh - III+IV
+    1, // ˜˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ 2 ˜˜˜˜˜ KVArh - III+IV
     /*	DLMS_ENERGY_III_IV_T3	*/ 1,
     0,
     4,
@@ -294,7 +294,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 3 ï¿½ï¿½ï¿½ï¿½ï¿½ KVArh - III+IV
+    1, // ˜˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ 3 ˜˜˜˜˜ KVArh - III+IV
     /*	DLMS_ENERGY_III_IV_T4	*/ 1,
     0,
     4,
@@ -303,7 +303,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 4 ï¿½ï¿½ï¿½ï¿½ï¿½ KVArh - III+IV
+    1, // ˜˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ 4 ˜˜˜˜˜ KVArh - III+IV
     /*	DLMS_ENERGY_III_IV_T5	*/ 1,
     0,
     4,
@@ -312,7 +312,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 5 ï¿½ï¿½ï¿½ï¿½ï¿½ KVArh - III+IV
+    1, // ˜˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ 5 ˜˜˜˜˜ KVArh - III+IV
     /*	DLMS_ENERGY_III_IV_T6	*/ 1,
     0,
     4,
@@ -321,7 +321,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 6 ï¿½ï¿½ï¿½ï¿½ï¿½ KVArh - III+IV
+    1, // ˜˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ 6 ˜˜˜˜˜ KVArh - III+IV
     /*	DLMS_ENERGY_III_IV_T7	*/ 1,
     0,
     4,
@@ -330,7 +330,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 7 ï¿½ï¿½ï¿½ï¿½ï¿½ KVArh - III+IV
+    1, // ˜˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ 7 ˜˜˜˜˜ KVArh - III+IV
     /*	DLMS_ENERGY_III_IV_T8	*/ 1,
     0,
     4,
@@ -339,7 +339,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     true,
-    1, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 8 ï¿½ï¿½ï¿½ï¿½ï¿½ KVArh - III+IV
+    1, // ˜˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ 8 ˜˜˜˜˜ KVArh - III+IV
 
     /*	DLMS_TIME	*/ 0,
     0,
@@ -513,7 +513,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     false,
-    2, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ L1-L2
+    2, // ˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜˜˜˜ L1-L2
     /*	DLMS_L2_L3_VOLTAGE_OLD */ 1,
     0,
     12,
@@ -522,7 +522,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     false,
-    2, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ L2-L3
+    2, // ˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜˜˜˜ L2-L3
     /*	DLMS_L1_L3_VOLTAGE_OLD */ 1,
     0,
     12,
@@ -531,7 +531,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     false,
-    2, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ L1-L3
+    2, // ˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜˜˜˜ L1-L3
     /*	DLMS_L1_L2_VOLTAGE */ 1,
     0,
     124,
@@ -540,7 +540,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     false,
-    2, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ L1-L2
+    2, // ˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜˜˜˜ L1-L2
     /*	DLMS_L2_L3_VOLTAGE */ 1,
     0,
     125,
@@ -549,7 +549,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     false,
-    2, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ L2-L3
+    2, // ˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜˜˜˜ L2-L3
     /*	DLMS_L1_L3_VOLTAGE */ 1,
     0,
     126,
@@ -558,7 +558,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     false,
-    2, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ L1-L3
+    2, // ˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜˜˜˜ L1-L3
     /*	DLMS_CURRENT	*/ 1,
     0,
     11,
@@ -613,6 +613,24 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     ACC_3,
     false,
     2,
+    /*	DLMS_NOMINAL_VOLTAGE	*/ 1,
+    0,
+    0,
+    6,
+    0,
+    255,
+    ACC_2,
+    false,
+    2, // Nominal voltage
+    /*	DLMS_NOMINAL_CURRENT	*/ 1,
+    0,
+    0,
+    6,
+    1,
+    255,
+    ACC_3,
+    false,
+    2, // Nominal current
     /*	DLMS_NOMINAL_FREQUENCY	*/ 1,
     0,
     0,
@@ -630,7 +648,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_3,
     false,
-    2, // Cos(ï¿½ï¿½ï¿½ï¿½ A)
+    2, // Cos(˜˜˜˜ A)
     /*	DLMS_L2_COS					*/ 1,
     0,
     53,
@@ -639,7 +657,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_3,
     false,
-    2, // Cos(ï¿½ï¿½ï¿½ï¿½ B)
+    2, // Cos(˜˜˜˜ B)
     /*	DLMS_L3_COS					*/ 1,
     0,
     73,
@@ -648,7 +666,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_3,
     false,
-    2, // Cos(ï¿½ï¿½ï¿½ï¿½ C)
+    2, // Cos(˜˜˜˜ C)
     /*	DLMS_COS					*/ 1,
     0,
     13,
@@ -657,7 +675,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_3,
     false,
-    2, // Cos(ï¿½ï¿½ï¿½ï¿½ï¿½)
+    2, // Cos(˜˜˜˜˜)
 
     /*	DLMS_RDCH_ENERGY_I_IV_OLD	*/ 1,
     0,
@@ -1339,7 +1357,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     false,
-    4, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    4, // ˜˜˜˜˜˜˜˜ ˜˜˜˜˜ ˜˜˜˜˜˜˜˜
     /*	DLMS_TYPE_METER	*/ 0,
     0,
     96,
@@ -1348,7 +1366,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     false,
-    4, // ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    4, // ˜˜˜ ˜˜˜˜˜˜˜˜
     /*	DLMS_FW_METER	*/ 0,
     0,
     96,
@@ -1357,7 +1375,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     false,
-    4, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    4, // ˜˜˜˜˜˜ ˜˜ ˜˜˜˜˜˜˜˜
     /*	DLMS_OPERATING_TIME	*/ 0,
     0,
     96,
@@ -1366,7 +1384,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     false,
-    4, // ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    4, // ˜˜˜˜˜ ˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜˜
     /*	DLMS_BATTERY_VOLTAGE	*/ 0,
     0,
     96,
@@ -1384,7 +1402,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_4,
     false,
-    4, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    4, // ˜˜˜˜˜˜˜˜˜˜˜
     /*	DLMS_HDLC_SPEED_0	*/ 0,
     0,
     22,
@@ -1466,7 +1484,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     false,
-    4, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    4, // ˜˜˜˜˜˜˜˜ ˜˜˜˜˜ ˜˜˜˜˜˜
     /*	DLMS_TYPE_DISPLAY	*/ 0,
     0,
     96,
@@ -1475,7 +1493,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     false,
-    4, // ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    4, // ˜˜˜ ˜˜˜˜˜˜
     /*	DLMS_FW_DISPLAY	*/ 0,
     0,
     96,
@@ -1484,7 +1502,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     false,
-    4, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    4, // ˜˜˜˜˜˜ ˜˜ ˜˜˜˜˜˜
 
     /*	DLMS_LCD_DIAG	*/ 255,
     255,
@@ -1494,7 +1512,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     false,
-    4, // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    4, // ˜˜˜˜˜˜˜˜˜˜˜
     /*	DLMS_NO_DATA	*/ 255,
     255,
     255,
@@ -1503,7 +1521,7 @@ const list_dlms_OBIS_codes_t list_dlms_OBIS_codes[DLMS_MAX_OBJ] = {
     255,
     ACC_2,
     false,
-    4, // ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    4, // ˜˜˜ ˜˜˜˜˜˜
 }; // END OBIS_codes
 //----------------------------------------------------------------------------//
 void ShowOBIS(objDLMS_t OBIS) { //
@@ -1785,9 +1803,28 @@ void ShowOBIS(objDLMS_t OBIS) { //
     lcd.show_val_pos(0, 20);
     lcd.text(SHOW, 2, OP2, OP3);
     break;
+  case DLMS_NOMINAL_VOLTAGE: // 1.0.0.6.0
+    dlms.fVolt = true;
+    lcd.showText("\xCD\xCE\xCC"); // NOM
+    lcd.show_val_pos(1, 17);
+    lcd.show_val_pos(0, 18);
+    lcd.show_val_pos(0, 19);
+    lcd.show_val_pos(6, 20);
+    lcd.show_val_pos(0, 21);
+    lcd.text(SHOW, 4, OP1, OP2, OP3, OP4);
+    break;
+  case DLMS_NOMINAL_CURRENT:      // 1.0.0.6.1
+    lcd.showText("\xCD\xCE\xCC"); // NOM
+    lcd.show_val_pos(1, 17);
+    lcd.show_val_pos(0, 18);
+    lcd.show_val_pos(0, 19);
+    lcd.show_val_pos(6, 20);
+    lcd.show_val_pos(1, 21);
+    lcd.text(SHOW, 4, OP1, OP2, OP3, OP4);
+    break;
   case DLMS_NOMINAL_FREQUENCY:
     lcd.showText("\xCD\xCE\xCC"); // NOM
-    dlms.fHz = true; // 1.0.0.6.2
+    dlms.fHz = true;              // 1.0.0.6.2
     lcd.show_val_pos(1, 17);
     lcd.show_val_pos(0, 18);
     lcd.show_val_pos(0, 19);
@@ -1795,7 +1832,7 @@ void ShowOBIS(objDLMS_t OBIS) { //
     lcd.show_val_pos(2, 21);
     lcd.text(SHOW, 4, OP1, OP2, OP3, OP4);
     break;
-  case DLMS_HDLC_SPEED_0: // 0.0.22.0.0
+  case DLMS_HDLC_SPEED_0:             // 0.0.22.0.0
     lcd.showText("\xD1\xCA\xCE\xD0"); // SKOR
     lcd.show_val_pos(0, 17);
     lcd.show_val_pos(0, 18);
@@ -1805,7 +1842,7 @@ void ShowOBIS(objDLMS_t OBIS) { //
     lcd.show_val_pos(0, 22);
     lcd.text(SHOW, 4, OP1, OP2, OP4, OP5);
     break;
-  case DLMS_HDLC_SPEED_1: // 0.1.22.0.0
+  case DLMS_HDLC_SPEED_1:             // 0.1.22.0.0
     lcd.showText("\xD1\xCA\xCE\xD0"); // SKOR
     lcd.show_val_pos(0, 17);
     lcd.show_val_pos(1, 18);
@@ -1815,7 +1852,7 @@ void ShowOBIS(objDLMS_t OBIS) { //
     lcd.show_val_pos(0, 22);
     lcd.text(SHOW, 4, OP1, OP2, OP4, OP5);
     break;
-  case DLMS_HDLC_SPEED_2: // 0.2.22.0.0
+  case DLMS_HDLC_SPEED_2:             // 0.2.22.0.0
     lcd.showText("\xD1\xCA\xCE\xD0"); // SKOR
     lcd.show_val_pos(0, 17);
     lcd.show_val_pos(2, 18);
@@ -1825,7 +1862,7 @@ void ShowOBIS(objDLMS_t OBIS) { //
     lcd.show_val_pos(0, 22);
     lcd.text(SHOW, 4, OP1, OP2, OP4, OP5);
     break;
-  case DLMS_HDLC_SPEED_3: // 0.3.22.0.0
+  case DLMS_HDLC_SPEED_3:             // 0.3.22.0.0
     lcd.showText("\xD1\xCA\xCE\xD0"); // SKOR
     lcd.show_val_pos(0, 17);
     lcd.show_val_pos(3, 18);
@@ -1835,7 +1872,7 @@ void ShowOBIS(objDLMS_t OBIS) { //
     lcd.show_val_pos(0, 22);
     lcd.text(SHOW, 4, OP1, OP2, OP4, OP5);
     break;
-  case DLMS_HDLC_ADDR_0: // 0.0.22.0.0 - address
+  case DLMS_HDLC_ADDR_0:                  // 0.0.22.0.0 - address
     lcd.showText("\xC0\xC4\xD0\xC5\xD1"); // ADRES
     lcd.show_val_pos(0, 17);
     lcd.show_val_pos(0, 18);
@@ -1845,7 +1882,7 @@ void ShowOBIS(objDLMS_t OBIS) { //
     lcd.show_val_pos(0, 22);
     lcd.text(SHOW, 4, OP1, OP2, OP4, OP5);
     break;
-  case DLMS_HDLC_ADDR_1: // 0.1.22.0.0 - address
+  case DLMS_HDLC_ADDR_1:                  // 0.1.22.0.0 - address
     lcd.showText("\xC0\xC4\xD0\xC5\xD1"); // ADRES
     lcd.show_val_pos(0, 17);
     lcd.show_val_pos(1, 18);
@@ -1855,7 +1892,7 @@ void ShowOBIS(objDLMS_t OBIS) { //
     lcd.show_val_pos(0, 22);
     lcd.text(SHOW, 4, OP1, OP2, OP4, OP5);
     break;
-  case DLMS_HDLC_ADDR_2: // 0.2.22.0.0 - address
+  case DLMS_HDLC_ADDR_2:                  // 0.2.22.0.0 - address
     lcd.showText("\xC0\xC4\xD0\xC5\xD1"); // ADRES
     lcd.show_val_pos(0, 17);
     lcd.show_val_pos(2, 18);
@@ -1865,7 +1902,7 @@ void ShowOBIS(objDLMS_t OBIS) { //
     lcd.show_val_pos(0, 22);
     lcd.text(SHOW, 4, OP1, OP2, OP4, OP5);
     break;
-  case DLMS_HDLC_ADDR_3: // 0.3.22.0.0 - address
+  case DLMS_HDLC_ADDR_3:                  // 0.3.22.0.0 - address
     lcd.showText("\xC0\xC4\xD0\xC5\xD1"); // ADRES
     lcd.show_val_pos(0, 17);
     lcd.show_val_pos(3, 18);
@@ -1877,7 +1914,7 @@ void ShowOBIS(objDLMS_t OBIS) { //
     break;
   case DLMS_TIME:
     lcd.showText("\xC2\xD0\xC5\xCC\xDF"); // VREMYA
-    if (dlmsClockAkros) { // AKROS: Clock 0.0.1.0.0
+    if (dlmsClockAkros) {                 // AKROS: Clock 0.0.1.0.0
       lcd.show_val_pos(0, 17);
       lcd.show_val_pos(0, 18);
       lcd.show_val_pos(1, 19);
@@ -1894,7 +1931,7 @@ void ShowOBIS(objDLMS_t OBIS) { //
     break;
   case DLMS_DATE:
     lcd.showText("\xC4\xC0\xD2\xC0"); // DATA
-    if (dlmsClockAkros) { // AKROS: Clock 0.0.1.0.0
+    if (dlmsClockAkros) {             // AKROS: Clock 0.0.1.0.0
       lcd.show_val_pos(0, 17);
       lcd.show_val_pos(0, 18);
       lcd.show_val_pos(1, 19);
@@ -2777,7 +2814,8 @@ void ShowData(obj_t element) {
   double tmpVal, tmp;
   lcd.text(HIDE, 1, M); // MW symbol (AKROS large power)
 
-  if ((element.pConst->OBIS[2] == 22) && (element.type == TAG_UINT16)) { // AKROS: HDLC device address
+  if ((element.pConst->OBIS[2] == 22) &&
+      (element.type == TAG_UINT16)) { // AKROS: HDLC device address
     lcd.show_long((s32)((u16)element.value), false, false, 0);
     return;
   }
@@ -2807,7 +2845,7 @@ void ShowData(obj_t element) {
   case TAG_UINT32: {
     if (0 == memcmp(element.pConst->OBIS,
                     dlms.obj[DLMS_OPERATING_TIME].pConst->OBIS,
-                    6)) { // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
+                    6)) { // ˜˜˜˜ ˜˜˜˜˜
       lcd.show_long(element.value / 60, false, false, 0);
       return;
     } else
@@ -2829,7 +2867,7 @@ void ShowData(obj_t element) {
     if ((0 ==
          memcmp(element.pConst->OBIS, dlms.obj[DLMS_TIME].pConst->OBIS, 6)) ||
         (0 == memcmp(element.pConst->OBIS,
-                     dlms.obj[DLMS_RDCH_TIME].pConst->OBIS, 6))) { // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
+                     dlms.obj[DLMS_RDCH_TIME].pConst->OBIS, 6))) { // ˜˜˜˜ ˜˜˜˜˜
       lcd.clear_data();
       RTC_TimeTypeDef RTC_Time;
       RTC_Time.Hours = BYTE_3(element.value);
@@ -2841,7 +2879,7 @@ void ShowData(obj_t element) {
                             dlms.obj[DLMS_DATE].pConst->OBIS, 6)) ||
                (0 == memcmp(element.pConst->OBIS,
                             dlms.obj[DLMS_RDCH_DATE].pConst->OBIS,
-                            6))) { // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+                            6))) { // ˜˜˜˜ ˜˜˜˜
       RTC_TimeTypeDef RTC_Time;
       RTC_Time.Date = BYTE_0(element.value);
       RTC_Time.Month = BYTE_1(element.value);
@@ -2877,7 +2915,9 @@ void ShowData(obj_t element) {
     if (0 == memcmp(element.pConst->OBIS,
                     dlms.obj[DLMS_SERIAL_NUMBER_DISPLAY].pConst->OBIS, 6)) {
       lcd.show_long(SystemInfo.serialNumber, true, false, 0);
-      lcd.showText("\xCD" "O" "\xCC \xC4\xC4"); // NOM DD (cp1251 codes)
+      lcd.showText("\xCD"
+                   "O"
+                   "\xCC \xC4\xC4"); // NOM DD (cp1251 codes)
       lcd.text(SHOW, 1, CP3);
       return;
     } else if (0 == memcmp(element.pConst->OBIS,
@@ -2894,7 +2934,7 @@ void ShowData(obj_t element) {
                            dlms.obj[DLMS_FW_DISPLAY].pConst->OBIS, 6)) {
       u32 tmp = (FW_VERSION_MAJOR * 1000000) + (FW_VERSION_MINOR * 10000) +
                 (FW_VERSION_PATCH * 100) + FW_VERSION_BUILD;
-      lcd.show_long(tmp, false, false, 2); // ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+      lcd.show_long(tmp, false, false, 2); // ˜˜˜˜˜ ˜˜˜˜˜˜˜˜
       lcd.text(SHOW, 3, PP2, PP4, PP6);
       lcd.showText("\xCF\xCE \xC4\xC4"); // PO DD (cp1251 codes)
       return;
@@ -2911,7 +2951,8 @@ void ShowData(obj_t element) {
     while (-(element.scale++))
       tmpVal = tmpVal / 10;
   }
-  // Number of decimals by accuracy (ACC_2 without decimals from 1000000 - as before)
+  // Number of decimals by accuracy (ACC_2 without decimals from 1000000 - as
+  // before)
   u8 dec = 2;
   if (element.pConst->acc == ACC_3)
     dec = 3;
@@ -2935,7 +2976,8 @@ void ShowData(obj_t element) {
       a = a / div;
       fMega = true;
     }
-    while ((dec > 0) && ((a * scale) >= lim)) { // still does not fit -> fewer decimals
+    while ((dec > 0) &&
+           ((a * scale) >= lim)) { // still does not fit -> fewer decimals
       dec--;
       scale /= 10;
     }
@@ -2944,7 +2986,8 @@ void ShowData(obj_t element) {
     lcd.text(SHOW, 1, M);
   else if (element.pConst->fKilo)
     lcd.text(SHOW, 1, k);
-  lcd.show_float(tmpVal, false, false, dec); // decimal point is set inside show_long
+  lcd.show_float(tmpVal, false, false,
+                 dec); // decimal point is set inside show_long
   switch (element.unit) {
   case UNIT_ACTIVE_POWER: {
     lcd.text(SHOW, 2, V, t);

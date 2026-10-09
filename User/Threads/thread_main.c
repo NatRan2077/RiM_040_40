@@ -394,7 +394,7 @@ PT_THREAD (thread_main(pt_t *pt)){
 					tim.reset(TIMER_DELAY);
 					cnt++;
 					if(msg.getVal(MSG_BLE_SEARCHING_CONTINUE))	cnt =0;
-					if(cnt >= 10){
+					if(cnt >= 60){
 						rssiBLE = -100;
 						lcd.clear();
 						lcd.text(SHOW, 1, CP3);
